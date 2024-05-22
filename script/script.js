@@ -1,7 +1,4 @@
-const containerDiv=document.querySelector("div.container");
-
-const articleEl = document.createElement("article");
-
+const containerDiv= document.querySelector("div.container");
 
 const team=[
     {
@@ -61,6 +58,31 @@ const team=[
 ];
 
 
+
+
+
 for (let index=0; index<team.length; index++){
-    console.log(team[index])
+    const articleEl = document.createElement("article");
+
+    const imgEl= document.createElement("img");
+
+
+    const pEl= document.createElement("p"); 
+
+    let img=team[index].foto;
+
+   containerDiv.appendChild(articleEl);
+
+
+   articleEl.appendChild(imgEl);
+
+   articleEl.appendChild(pEl);
+
+    pEl.append(team[index].nome , team[index].ruolo);
+
+   imgEl.setAttribute("src","./img/" + img);
+
+   console.log(team[index].foto)
+    
+      
 }
