@@ -54,8 +54,10 @@ const team=[
         foto:"barbara-ramos-graphic-designer.jpg"
 
     },
-    
+
 ];
 
 
-
+for (let index=0; index<team.length; index++){
+    console.log(team[index])
+}
