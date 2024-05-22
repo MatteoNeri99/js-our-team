@@ -1,4 +1,7 @@
-const containerDiv=document.querySelector("div.container")
+const containerDiv=document.querySelector("div.container");
+
+const articleEl = document.createElement("article");
+
 
 const team=[
     {
